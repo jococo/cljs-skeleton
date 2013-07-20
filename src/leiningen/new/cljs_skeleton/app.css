@@ -1,0 +1,17 @@
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.04);
+}
+
+body {
+  color: #424;
+}
+
+h1, h2, h3 {
+  font-weight: 200;
+}
+
+.main-page {
+  margin-top: 40px;
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+# call ./cljs-repl listen
+rlwrap -r -m '\"' -b "(){}[],^%3@\";:'" lein trampoline cljsbuild repl-$1
