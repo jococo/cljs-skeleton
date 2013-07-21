@@ -1,6 +1,9 @@
 (ns {{name}}.main
- (:use
-  [jayq.core :only [$ css html text on]]))
+ (:use-macros
+  [dommy.macros :only [sel sel1]])
+ (:require
+   [dommy.utils :as utils]
+   [dommy.core :as dommy]))
 
 
 (js/alert "Working!")
