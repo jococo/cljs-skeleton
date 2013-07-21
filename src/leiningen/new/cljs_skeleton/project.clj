@@ -17,7 +17,7 @@
   :cljsbuild {
     :builds {
       :dev {
-        :source-paths [ "src/cljs"]
+        :source-paths [ "src/cljs-util/connect" "src/cljs"]
         :compiler {
           :output-to "resources/public/js/main.js"}
         }

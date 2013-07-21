@@ -42,12 +42,30 @@ CD into the new project.
 To fire up the web server, type the following in a terminal from within your project:
 
     lein ring server
-    
+
 Leave that running and then open another terminal and CD to you project, then type:
 
     lein cljsbuild auto dev
 
 which gives automatic compilation whenever you make any changes in your ClojureScript files.
+
+## Repl
+
+This section on setting up a Repl that connects with the running code in your browser comes from the excellent set of ClojureScript tutorials [modern-cljs](https://github.com/magomimmo/modern-cljs/blob/master/doc/tutorial-02.md)
+
+Open another terminal window in the root of the project. Type:
+
+    ./cljs-repl listen
+
+If you get the message `permission denied` then cljs-repl is not executable so type:
+
+    chmod +x cljs-repl
+
+When you get the message 'listening on port 9000' refresh your browser, then, in the terminal, you should see the ClojureScript repl command prompt. Now type:
+
+    (js/alert "Hi there")
+
+and you should be rewarded with an Alert box appearing in your browser window.
 
 ## License
 

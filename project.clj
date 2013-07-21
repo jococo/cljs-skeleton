@@ -1,4 +1,4 @@
-(defproject cljs-skeleton/lein-template "0.1.0-SNAPSHOT"
+(defproject cljs-skeleton/lein-template "0.1.1-SNAPSHOT"
   :description "ClojureScript and Compojure template for Leiningen"
   :url "https://github.com/jococo"
   :license {:name "Eclipse Public License"
