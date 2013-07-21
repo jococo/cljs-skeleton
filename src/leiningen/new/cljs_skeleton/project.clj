@@ -3,7 +3,8 @@
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [compojure "1.1.5"]
-                 [hiccup "1.0.3"]]
+                 [hiccup "1.0.3"]
+                 [jayq "2.4.0"]]
   :plugins [[lein-ring "0.8.5"]
             [lein-cljsbuild "0.3.2"]]
   :hooks [leiningen.cljsbuild]
@@ -11,7 +12,7 @@
   :ring { :handler {{name}}.handler/app }
   :profiles {
     :dev {
-      :dependencies [[ring-mock "0.1.5"][prismatic/dommy "0.1.1"]]
+      :dependencies [[ring-mock "0.1.5"]]
     }
   }
   :cljsbuild {
